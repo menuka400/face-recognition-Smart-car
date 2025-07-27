@@ -1,0 +1,48 @@
+# Face Recognition System Configuration
+
+# Face Detection Settings
+face_detection:
+  model_path: "yolov11m-face.pt"
+  confidence_threshold: 0.6  # Minimum confidence for face detection (0.0 - 1.0)
+  save_folder: "Face_imagers"
+  unknown_folder: "unknown_faces"
+  max_images_per_folder: 10  # Maximum number of images to keep in each folder
+  resolution:
+    input_width: 1280    # YOLO model input width
+    input_height: 720    # YOLO model input height
+    min_face_size: 100  # Minimum face size for detection
+
+# Face Recognition Settings
+face_recognition:
+  insightface_model_path: "insightface_models/models/buffalo_l.zip"
+  json_database_path: "face_embeddings.json"
+  similarity_threshold: 0.40  # Minimum similarity for face recognition (0.0 - 1.0)
+  resolution:
+    det_size_width: 1280   # InsightFace detection size width
+    det_size_height: 720  # InsightFace detection size height
+    face_crop_size: 224   # Face crop size for recognition
+    embedding_size: 512   # Face embedding vector size
+
+# Camera Settings
+camera:
+  device_id: 0  # Camera device ID (0 for default camera)
+  resolution:
+    width: 1280   # Camera width resolution
+    height: 720  # Camera height resolution
+  fps: 30        # Frames per second
+
+# Display Settings
+display:
+  window_name: "Face Recognition"
+  show_confidence: true
+  show_bounding_box: true
+  font_scale: 0.6
+  font_thickness: 2
+  box_thickness: 2
+  
+# Colors (BGR format)
+colors:
+  known_face_box: [0, 255, 0]    # Green for known faces
+  unknown_face_box: [0, 0, 255]  # Red for unknown faces
+  text_background: [0, 0, 0]     # Black background for text
+  text_color: [255, 255, 255]    # White text

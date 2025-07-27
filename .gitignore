@@ -1,0 +1,205 @@
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Machine Learning Models (keep specific models, ignore downloaded/generated ones)
+*.onnx
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.pb
+*.tflite
+*.bin
+*.model
+*.pkl
+!yolov11m-face.pt  # Keep the main YOLO model
+
+# Face Recognition Data
+face_embeddings.json.backup
+face_embeddings_*.json
+*.backup
+
+# Generated Images and Data
+Face_imagers/*.jpg
+Face_imagers/*.png
+Face_imagers/*.jpeg
+!Face_imagers/.gitkeep
+unknown_faces/*.jpg
+unknown_faces/*.png
+unknown_faces/*.jpeg
+!unknown_faces/.gitkeep
+face_arrays.pkl
+
+# Arduino/ESP32
+*.ino.cpp
+*.ino.hex
+*.ino.bin
+*.ino.elf
+*.ino.map
+*.ino.eep
+.pio/
+.vscode/
+platformio.ini
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.logs
+logs/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Configuration backups
+config.yaml.backup
+config_*.yaml
+
+# Test files
+test_*.py
+*_test.py
+tests/
+test/
+
+# Documentation
+docs/_build/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Flask instance folder
+instance/
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
